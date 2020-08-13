@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+//import './index.css';
+import Letter from './components/Letter';
+//import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Letter bgcolor="#58B3FF">А</Letter>
+    <Letter bgcolor="#FF605F">Е</Letter>
+    <Letter bgcolor="#FFD52E">И</Letter>
+    <Letter bgcolor="#49DD8E">О</Letter>
+    <Letter bgcolor="#AE99FF">У</Letter>
+    <hr></hr>
+    <Letter bgcolor="PINK">Дианочка</Letter>
+    <hr></hr>
+    <Letter bgcolor="BLUE">Давидка</Letter>
+    <hr></hr>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.querySelector('#root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
